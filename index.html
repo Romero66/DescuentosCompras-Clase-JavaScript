@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sistemas de compras</h1>
+
+    <form action="">
+      <div>
+        <label for="">Nombre Completo</label>
+        <input type="text" id="inputName"/>
+      </div>
+
+      <div>
+          <label for="">Seleccione producto</label>
+          <select name="select" id="selectProducto">
+              <option value="Aseo">Aseo</option>
+              <option value="Carnes">Carnes</option>
+              <option value="Frutas">Frutas</option>
+              <option value="Granos">Granos</option>
+          </select>
+      </div>
+
+      <div>
+        <label for="">Cantidad Producto</label>
+        <input type="number" id="inputProducto"/>
+      </div>
+        <input type="button" id="buttonCalcular" value="Calcular" onclick="capturarDatos()">
+
+    </form>
+
+    <div id="mostrar">
+        <label for="">Descuento</label>
+            <input type="text"id="descuento" readonly>
+    </div>
+    <div>
+        <label >Total a pagar</label>
+        <input type="text" id="totalPagar" readonly>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
